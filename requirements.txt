@@ -1,8 +1,10 @@
 Flask>=1.0,<=1.1.2
+--upgrade pip
 wheel
 requests
 numpy
 pillow 
+tensorflow
 tensorflow==2.5.0
 albumentations
 segmentation-models
