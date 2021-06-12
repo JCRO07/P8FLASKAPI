@@ -4,7 +4,6 @@ requests
 numpy
 pillow 
 tensorflow
-tensorflow==2.5.0
 albumentations
 segmentation-models
 opencv-python
