@@ -103,7 +103,7 @@ def test():
     data = request.json
     image = data['image'] 
     data = asarray(image)  
-    temp_raw = resize(data, (256, 256))
+    #temp_raw = resize(data, (256, 256))
           # Predict
     aug = Compose([
             #A.HorizontalFlip(p=0.5),              
@@ -112,7 +112,7 @@ def test():
         ]
     )
     
-    augmented = aug(image=temp_raw)
+    augmented = aug(image=data)
     preprocess_input = sm.get_preprocessing(BACKBONE)
     preprocessing=get_preprocessing(preprocess_input)
     sample = preprocessing(image=augmented['image'])
